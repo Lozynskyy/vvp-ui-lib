@@ -1,5 +1,3 @@
 node_modules/
 build/
-.idea/modules.xml
-.idea/vvp-ui-lib.iml
-.idea/workspace.xml
+.idea/
