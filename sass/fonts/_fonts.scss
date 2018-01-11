@@ -1,23 +1,5 @@
-//Font "Softie" use for subtitle
-/*$Font4Title-family//font family
-$Font4Title-size//font height
-$Font4Title-color//font color*/
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-
-@mixin Font4Title($Font4Title-family,$Font4Title-size,$Font4Title-color){
-    font-family: $Font4Title-family;
-    font-size: $Font4Title-size;
-    color:$Font4Title-color;
-}
-
-
-//Font "Lato" use for paragraphs
-/*$Font4Parag-family//font family
-$Font4Parag-size//font height
-$Font4Parag-color//font color*/
-
-@mixin Font4Parag($Font4Parag-family,$Font4Parag-size,$Font4Parag-color){
-    font-family: $Font4Parag-family;
-    font-size: $Font4Parag-size;
-    color:$Font4Parag-color;
-}
+$Font4Paragraphs:"Lato",sans-serif;
+$Font4Title:"Merriweather",serif;

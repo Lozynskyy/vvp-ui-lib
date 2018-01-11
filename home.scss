@@ -1,0 +1,49 @@
+
+@import "grid";
+//TODO:ADD prefix
+.vvp-accordion__header{
+    border: 3px solid lightgreen;
+    height:54px;
+    width:1246%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+.vvp-accordion{
+  &__title{
+    margin-left: 15px;
+  }
+  //TODO: align div with image
+  //TODO:change arrow rotation
+  &__toggle{
+    margin-right: 14px;
+    /*
+    transform: rotate(180deg);
+    */
+  }
+  &__toggle--invert{
+    transform: rotate(180deg);
+  }
+}
+
+
+.vvp-accordion__content {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  //TODO:Fix it
+  width: 1246%;
+  border: 3px solid green;
+  justify-content: space-around;
+  align-content: space-around;
+
+  &--hidden{
+    display: none;
+  }
+  .item {
+    width: 45%;
+    height: 100px;
+    background-color: #00A2E5;
+  }
+}

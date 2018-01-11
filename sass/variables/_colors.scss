@@ -1,42 +1,35 @@
-//orange color
+
 $orange:#F37121;
-$orange80:$orange*1.2;
-$orange60:$orange*1.4;
+$orange80:rgba($orange,0.8);
+$orange60:rgba($orange,0.6);
 
-//red color
 $red:#D71C23;
-$red80:$red*1.2;
-$red60:$red*1.4;
+$red80:rgba($red,0.8);
+$red60:rgba($red,0.6);
 
-//yellow color
 $yellow:#FCAF17;
-$yellow80:$yellow*1.2;
-$yellow60:$yellow*1.4;
+$yellow80:rgba($yellow,0.8);
+$yellow60:rgba($yellow,0.6);
 
-//beige color //бежевый
 $beige:#B29C88;
-$beige80:$beige*1.2;
-$beige60:$beige*1.4;
+$beige80:rgba($beige,0.8);
+$beige60:rgba($beige,0.6);
 
-//blue color// синий
 $blue:#0080C3;
-$blue80:$blue*1.2;
-$blue60:$blue*1.4;
+$blue80:rgba($blue,0.8);
+$blue60:rgba($blue,0.6);
 
-//azure color// глазурь(голубой)
 $azure:#00A2E5;
-$azure80:$azure*1.2;
-$azure60:$azure*1.4;
+$azure80:rgba($azure,0.8);
+$azure60:rgba($azure,0.6);
 
-//black color
 $black:#000000;
-$black80:$blue*1.2;
-$black60:$black*1.4;
+$black80:rgba($blue,0.8);
+$black60:rgba($black,0.6);
 
-//white color
 $white:#FFFFFF;
-$white80:$white*1.2;
-$white60:$white*1.4;
+$white80:rgba($white,0.8);
+$white60:rgba($white,0.6);
 
 
 
