@@ -1,0 +1,24 @@
+.vvp-button {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: Lato;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px 24px;
+    min-width: 160px;
+    &:hover {
+        text-decoration: none;
+    }
+    &--border {
+        background-color: #fff;
+        color: $red;
+        display: inline-block;
+        border: 2px solid $red;
+    }
+    &--fill {
+        background-color: $orange;
+        color: #fff;
+        border: 2px solid $orange;
+    }
+}
