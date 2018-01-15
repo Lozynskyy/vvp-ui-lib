@@ -1,0 +1,32 @@
+$check-mark:"\2713";
+label {
+  font-family: $Font4Paragraphs;
+}
+
+.vvp-checkbox {
+  cursor:pointer;
+  display: block;
+
+  input {
+    display: none;
+
+    & + span:before {
+      content:'';
+      height:18px;
+      width: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      background-color: #fff; //$white
+      border:2px solid #f37121;
+      margin-right: 20px;
+    }
+
+    &:checked + span:before {
+      content:$check-mark;
+      color:#fff;//$white
+      background-color: #f37121;//$orange
+    }
+  }
+}
