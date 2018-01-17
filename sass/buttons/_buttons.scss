@@ -1,7 +1,7 @@
 .vvp-button {
     font-size: 18px;
     margin-top: 10px;
-    font-family: Lato;
+    font-family: $font-paragraphs;
     font-weight: bold;
     text-align: center;
     border-radius: 2px;
@@ -11,14 +11,14 @@
         text-decoration: none;
     }
     &--border {
-        background-color: #fff;
-        color: $red;
+        background-color: $color-white;
+        color: $color-red;
         display: inline-block;
-        border: 2px solid $red;
+        border: 2px solid $color-red;
     }
     &--fill {
-        background-color: $orange;
+        background-color: $color-orange;
         color: #fff;
-        border: 2px solid $orange;
+        border: 2px solid $color-orange;
     }
 }

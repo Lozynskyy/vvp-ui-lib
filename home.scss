@@ -1,49 +1,95 @@
-
 @import "grid";
-//TODO:ADD prefix
-.vvp-accordion__header{
-    border: 3px solid lightgreen;
+
+.vvp-accordion{
+  &__header{
+    cursor: pointer;
+    background-color: rgba(#F37121,0.8);//$color-orange80
     height:54px;
-    width:1246%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
   }
-.vvp-accordion{
+
   &__title{
-    margin-left: 15px;
+    margin: 16px auto 16px 16px;
+    height: 22px;
+    font-size: 18px;
+    color:#fff;//color-$white
+    font-family: Kalimati;//$font-paragraphs
   }
-  //TODO: align div with image
-  //TODO:change arrow rotation
+
   &__toggle{
-    margin-right: 14px;
-    /*
-    transform: rotate(180deg);
-    */
+    //TODO: change div. too much free space above arrow!!!
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    & img{
+      height: 100%;
+      width: 100%;
+    }
   }
-  &__toggle--invert{
-    transform: rotate(180deg);
+
+  &__content{
+    display: none;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    &--show{
+      background-color: rgba(178, 156, 136, 0.1);
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 16px;
+    }
   }
 }
-
-
-.vvp-accordion__content {
+//////////////////////////////////////////mediacard
+.vvp-media-card {
+  margin-top:16px;
   display: flex;
-  flex-flow: row wrap;
-  height: 100vh;
-  //TODO:Fix it
-  width: 1246%;
-  border: 3px solid green;
-  justify-content: space-around;
-  align-content: space-around;
-
-  &--hidden{
-    display: none;
+  flex-direction: column;
+  background-color: rgba(178, 156, 136, 0.2);
+  &__content {
+    margin: 16px 16px;
+    display: flex;
+    flex-direction: row;
   }
-  .item {
-    width: 45%;
-    height: 100px;
-    background-color: #00A2E5;
+  &__media {
+    width: 180px;
+    height: 115px;
+  }
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 14px;
+    }
+  }
+  &__toggle {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    #arrow {
+      height: 24px;
+    }
+  }
+  &__dropdown-info {
+    width: 100%;
+    display: none;
+    &__open-content {
+      margin: 16px 16px;
+    }
+    &--show{
+      display: block;
+    }
   }
 }

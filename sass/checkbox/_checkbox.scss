@@ -1,18 +1,12 @@
-$check-mark:"\2713";
-label {
-  font-family: $Font4Paragraphs;
-  font-size: 16px;
-  height:19px;
-}
-
 .vvp-checkbox {
   cursor:pointer;
   display: block;
+  font-family: $font-paragraphs;
+  font-size: 16px;
 
   input {
     display: none;
-
-    & + span:before {
+    & + .vvp-checkbox__square:before {
       content:'';
       height:18px;
       width: 18px;
@@ -20,15 +14,15 @@ label {
       align-items: center;
       justify-content: center;
       float: left;
-      background-color: #fff; //$white
+      background-color: #fff; //$color-white
       border:2px solid #f37121;
       margin-right: 20px;
     }
 
-    &:checked + span:before {
-      content:$check-mark;
-      color:#fff;//$white
-      background-color: #f37121;//$orange
+    &:checked + .vvp-checkbox__square:before {
+      content:'\2713';//check mark
+      color:#fff;//$color-white
+      background-color: #f37121;//color-$orange
     }
   }
 }

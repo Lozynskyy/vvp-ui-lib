@@ -1,28 +1,25 @@
-
-$columnAmount:12;
+$column-amount:12;
 
 .vvp-grid{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+
 }
 
 
-@mixin createGridColumn($i,$columnAmount){
+@mixin createGridColumn($i,$column-amount){
   position:relative;
   width:100%;
   box-sizing: border-box;
-  flex: 0 0 6.5%;
-  max-width: 6.5%;
-  background-color: rgba(red,0.3);
-  height: 100vh;
+  flex: 0 0 percentage($i/$column-amount);
+  max-width: percentage($i/$column-amount);
 }
 
 @media (min-width:1200px){
   @for $i from 1 through 12{
     .vvp-grid__col-xl-#{$i} {
-      @include createGridColumn($i, $columnAmount)
+      @include createGridColumn($i, $column-amount)
     }
   }
 }
@@ -31,7 +28,7 @@ $columnAmount:12;
 @media (min-width: 992px){
   @for $i from 1 through 12{
      .vvp-grid__col-lg-#{$i} {
-      @include createGridColumn($i, $columnAmount)
+      @include createGridColumn($i, $column-amount)
     }
   }
 }
@@ -39,12 +36,7 @@ $columnAmount:12;
 @media (min-width: 768px){
   @for $i from 1 through 12{
      .vvp-grid__col-md-#{$i} {
-      @include createGridColumn($i, $columnAmount)
+      @include createGridColumn($i, $column-amount)
     }
   }
 }
-
-
-
-
-
