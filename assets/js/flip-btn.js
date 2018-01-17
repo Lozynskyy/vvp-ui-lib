@@ -8,7 +8,7 @@ Array.from(document.querySelectorAll('.vvp-media-card__toggle')).forEach((toggle
 
 
 function toggleAccordion() {
-    document.querySelector('.vvp-accordion__content').classList.toggle('vvp-accordion__content--show');
+    document.querySelector('.vvp-accordion').classList.toggle('vvp-accordion--open');
 }
 
 function toggleContent(){
@@ -28,7 +28,5 @@ function toggleContent(){
             targetElement=elementParent;
         }
     }
-
     elementParent.querySelector('.vvp-media-card__dropdown-info').classList.toggle('vvp-media-card__dropdown-info--show');
-
 }

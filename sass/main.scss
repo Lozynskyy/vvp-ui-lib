@@ -1,9 +1,10 @@
-@import "/node_modules/normalize-scss/sass/normalize";
+@import "../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 
-@import "grid/grid";
 @import "variables/colors";
+@import "grid/grid";
 @import "fonts/fonts";
+@import "accordion/accordion";
 @import "inputs/input";
 @import "buttons/buttons";
 @import "checkbox/checkbox";

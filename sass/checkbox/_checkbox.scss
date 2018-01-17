@@ -14,15 +14,15 @@
       align-items: center;
       justify-content: center;
       float: left;
-      background-color: #fff; //$color-white
-      border:2px solid #f37121;
+      background-color: $color-white;
+      border:2px solid $color-orange;
       margin-right: 20px;
     }
 
     &:checked + .vvp-checkbox__square:before {
-      content:'\2713';//check mark
-      color:#fff;//$color-white
-      background-color: #f37121;//color-$orange
+      content:'✓';
+      color:$color-white;
+      background-color: $color-orange;
     }
   }
 }
