@@ -1,16 +1,12 @@
 $column-amount:12;
 
 .vvp-grid{
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
-
-@mixin createGridColumn($i,$column-amount){
+@mixin create-grid-column($i,$column-amount){
   position:relative;
   width:100%;
   box-sizing: border-box;
@@ -21,7 +17,7 @@ $column-amount:12;
 @media (min-width:1200px){
   @for $i from 1 through 12{
     .vvp-grid__col-xl-#{$i} {
-      @include createGridColumn($i, $column-amount)
+      @include create-grid-column($i, $column-amount)
     }
   }
 }
@@ -30,7 +26,7 @@ $column-amount:12;
 @media (min-width: 992px){
   @for $i from 1 through 12{
     .vvp-grid__col-lg-#{$i} {
-      @include createGridColumn($i, $column-amount)
+      @include create-grid-column($i, $column-amount)
     }
   }
 }
@@ -38,7 +34,7 @@ $column-amount:12;
 @media (min-width: 768px){
   @for $i from 1 through 12{
     .vvp-grid__col-md-#{$i} {
-      @include createGridColumn($i, $column-amount)
+      @include create-grid-column($i, $column-amount)
     }
   }
 }

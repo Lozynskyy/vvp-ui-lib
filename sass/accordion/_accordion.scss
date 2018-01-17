@@ -1,0 +1,47 @@
+.vvp-accordion{
+  &__header{
+    cursor: pointer;
+    background-color: $color-orange80;
+    height:54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--open {
+    .vvp-accordion__content {
+      background-color: rgba(178, 156, 136, 0.1);
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 16px;
+    }
+    .vvp-accordion__toggle {
+      transform:rotate(180deg);
+    }
+  }
+  &__title{
+    margin: 16px auto 16px 16px;
+    font-size: 18px;
+    color:$color-white;
+    font-family: $font-paragraphs;
+  }
+
+  &__toggle{
+    //при удалении кнопка увеличивается
+    cursor:pointer;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    & img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__content{
+    display: none;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+  }
+}
