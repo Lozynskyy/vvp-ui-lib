@@ -7,7 +7,7 @@
 	}
 
 	&__title{
-		color: $black60;
+		color: $color-black60;
 		padding: 1px;
 	}
 
@@ -34,11 +34,11 @@
 	
 	>tbody>tr{
 		&:nth-child(2n+1){
-			background-color: $beige80;
+			background-color: $color-beige80;
 		}
 
 		&:nth-child(2n){
-			background-color: $beige60;
+			background-color: $color-beige60;
 		}
 	}
 
