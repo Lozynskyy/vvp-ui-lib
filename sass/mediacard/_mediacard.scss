@@ -1,5 +1,5 @@
 .vvp-media-card {
-    margin-top:16px;
+    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     background-color: rgba($color-beige,0.2);
@@ -53,5 +53,8 @@
             transform:rotate(180deg);
             align-items: flex-start;
         }
+    }
+    &:last-child{
+        margin-bottom: 0;
     }
 }

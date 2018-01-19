@@ -1,17 +1,23 @@
 $column-amount:12;
 
+.vvp-container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .vvp-grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+//TODO:fix grid; create column
 @mixin create-grid-column($i,$column-amount){
   position:relative;
   width:100%;
   box-sizing: border-box;
   flex: 0 0 percentage($i/$column-amount);
   max-width: percentage($i/$column-amount);
+  padding:0 15px 0 15px;
 }
 
 @media (min-width:1200px){
