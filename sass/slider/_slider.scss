@@ -7,11 +7,10 @@
 }
 
 .vvp-slider {
-  width: 414px;
+  width: 100%;
   height: 414px;
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
+  display:flex;
+  justify-content: center;
 
   &__arrow{
       outline: none;
@@ -40,13 +39,17 @@
       }
     }
 
-  &__gallery{
+  &__gallery {
+    overflow: hidden;
+    width: 414px;
+  }
 
+  &__gallery-items{
+        padding-left: 0;
         display: flex;
         transition: transform .5s;
-        will-change: transform;
-        position: relative;
         z-index: 1;
+        height: 100%;
         img{
           height: 100%;
           width: 100%;

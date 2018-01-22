@@ -10,7 +10,7 @@ $column-amount:12;
   flex-wrap: wrap;
   justify-content: center;
 }
-//TODO:fix grid; create column
+
 @mixin create-grid-column($i,$column-amount){
   position:relative;
   width:100%;
