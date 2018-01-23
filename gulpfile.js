@@ -2,7 +2,7 @@
 
 
 let  gulp = require('gulp'),
-    sass = require('gulp-sass');
+     sass = require('gulp-sass');
 
 gulp.task('sass', function () {
     return gulp.src('sass/main.scss')
@@ -13,4 +13,3 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('sass/**/*.scss', ['sass']);
 });
-//sass --watch

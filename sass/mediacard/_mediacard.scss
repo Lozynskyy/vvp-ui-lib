@@ -1,8 +1,9 @@
 .vvp-media-card {
-    margin-top:16px;
+    margin-bottom: 16px;
+    margin-top: 16px;//when adding margin-top(margin-bottom) for media-card, width of accordion header little bit changed (resolved:create side scroll)
     display: flex;
     flex-direction: column;
-    background-color: rgba(178, 156, 136, 0.2);
+    background-color: rgba($color-beige,0.2);
     &__content {
         margin: 16px 16px;
         display: flex;
@@ -44,13 +45,13 @@
         &__open-content {
             margin: 16px 16px;
         }
-    &--show{
-        display: block;
-
-        .vvp-media-card__toggle {
+    }
+    &--open{
+        .vvp-media-card__dropdown-info{
+            display: block;
+        }
+        .vvp-media-card__toggle img{
             transform:rotate(180deg);
         }
-
-    }
     }
 }

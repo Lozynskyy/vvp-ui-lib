@@ -19,8 +19,6 @@ function toggleContent(){
             elementParent=targetElement.parentNode;
             targetElement=elementParent;
         }
-
-
     }
     else {
         for(let i=0;i<3;i++){
@@ -28,5 +26,5 @@ function toggleContent(){
             targetElement=elementParent;
         }
     }
-    elementParent.querySelector('.vvp-media-card__dropdown-info').classList.toggle('vvp-media-card__dropdown-info--show');
+    elementParent.classList.toggle('vvp-media-card--open');
 }

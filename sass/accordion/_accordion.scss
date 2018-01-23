@@ -10,10 +10,7 @@
 
   &--open {
     .vvp-accordion__content {
-      background-color: rgba(178, 156, 136, 0.1);
-      display: flex;
-      justify-content: space-evenly;
-      padding-bottom: 16px;
+      display: block;
     }
     .vvp-accordion__toggle {
       transform:rotate(180deg);
@@ -27,7 +24,6 @@
   }
 
   &__toggle{
-    //при удалении кнопка увеличивается
     cursor:pointer;
     width: 24px;
     height: 24px;
@@ -39,9 +35,7 @@
   }
 
   &__content{
+    background-color: rgba($color-beige, 0.1);
     display: none;
-    flex-flow: row wrap;
-    align-content: flex-start;
-
   }
 }
