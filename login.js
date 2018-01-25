@@ -1,10 +1,3 @@
-/*var input = document.querySelector('.menu');
-input.addEventListener('click', open)
-function open() {
-    document.querySelector('.dropdown').classList.toggle('dropdown--visible');
-}
-*/
-
 var input = document.querySelector('.menu');
 var country = ['America', 'Austriya', 'Russia', 'Ukraine', 'Italy'];
 var results;
