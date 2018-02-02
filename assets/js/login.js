@@ -36,6 +36,7 @@ input.onkeyup = function (e) {
     } else {
         countryShow = [];
         countryAutoComplete.innerHTML = '';
+        countryAutoComplete.style.display = 'none';
     }
     selectItem();
 }

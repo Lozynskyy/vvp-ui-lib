@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/img/2.jpg);
+    background-image: url(../assets/img/1.jpg);
     background-size: cover;
     position: relative;
     
@@ -15,10 +15,25 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, .4);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .formLogin {
+        width: 450px;
+        position: relative;
+        .label {
+            font-family: $font-paragraphs;
+            font-size: 18px;
+            color: $color-white;
+            margin-bottom: 6px;
+        }
     }
     .form-country {
         position: relative;
+        .menu {
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -28,14 +43,16 @@
     width: 100%;
     box-sizing: border-box;
     list-style: none;
-    padding-left: 0;
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
     background: white;
     border: 1px solid gray;
     line-height: 30px;
     
     .listElement {
-        padding-left: 10px;
+        padding-left: 16px;
+        font-family: $font-paragraphs;
+        font-size: 18px;
         &:hover {
             background: beige;
             cursor: pointer;
