@@ -2,29 +2,13 @@
 	background-color: $color-beige20;
 	height: 100%;
 	width: 354px;
-	position: absolute;
+	position: fixed;
 	margin-left: -354px;
 	color: $color-grey;
 	line-height: 22px;
 	font-family: Lato, sans-serif;
 	font-size: 18px;
-	transition: 0.5s;
-
-	&--active{
-			.vvp-menu{
-				margin-left: 0;
-				transition: 0.5s;
-			}
-
-			.vvp-container{
-				transform: translate(354px);
-				transition: 0.5s;
-			}
-
-			.vvp-menu-blur{
-				display: block;
-			}
-	}
+	transition: width 0.5s linear;
 
 	&__header{
 		width: 100%;
@@ -55,15 +39,6 @@
 		}
 	}
 
-	&-blur{
-		display: none;
-		width: 100%;
-		min-height: 100vh;
-		position: absolute;
-		background-color: $color-black30;
-		cursor: pointer;
-	}
-
 	&__close{
 		display: inline-block;
 		position: relative;
@@ -72,25 +47,47 @@
 		text-decoration: none;
 		color: inherit;
 	}
-
-	&__open{
-		top: 22px;
-		left: 26px;
-		cursor: pointer;
-	}
-
+	
 	&__icon{
-		display: inline-block;
-		width: 32px;
-		height: 32px;
-		position: relative;
-
-		&--cross{
-			top: 9px;
-		}
+		top: 9px;
 	}
 }
 
 .vvp-container{
-	transition: 0.5s;
+	transition: width 0.5s linear;
 }
+
+.vvp-menu-active{
+	.vvp-menu{
+		margin-left: 0;
+		transition: width 0.5s linear;
+	}
+
+	.vvp-container{
+		transform: translate(354px);
+		transition: width 0.5s linear;
+	}
+
+	.vvp-onmenu-background{
+		display: block;
+	}
+}
+
+.vvp-onmenu-background{
+	display: none;
+	width: 100%;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $color-black30;
+	cursor: pointer;
+}
+
+.vvp-menu-open{
+		top: 22px;
+		left: 26px;
+		cursor: pointer;
+	}
