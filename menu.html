@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">	
 	</head>
 	<body>
-		<aside class="vvp-menu vvp-menu--close">
+		<aside class="vvp-menu">
 			<div class="vvp-menu__header">
-				<img src="assets/img/cross.svg" alt="" class="vvp-menu-close vvp-menu-sign">
-				<span class="vvp-menu-close">Close</span>
+				<a href="#" class="vvp-menu__close">
+					<img src="assets/img/cross.svg" alt="" class="vvp-menu__icon vvp-menu__icon--cross">
+					<span>Close</span>
+				</a>
 			</div>
 			<nav>
 				<ul class="vvp-menu-list">
@@ -40,8 +42,9 @@
 				</ul>
 			</nav>
 		</aside>
-		<div class="vvp-content">
-			<img src="assets/img/nav.svg" alt="nav" class="vvp-menu-show vvp-menu-sign vvp-menu-show--active">
+		<div class="vvp-container">
+			<div class="vvp-menu-blur"></div>
+			<img src="assets/img/nav.svg" alt="nav" class="vvp-menu__icon vvp-menu__open">
 		</div>
 	<script src="assets/js/off-canvas-menu.js"></script>
 	</body>

@@ -1,23 +1,12 @@
-var clsBtn = document.getElementsByClassName('vvp-menu-close');
-var menu = document.getElementsByClassName('vvp-menu');
-var navIcon = document.getElementsByClassName('vvp-menu-show');
-var content = document.getElementsByClassName('vvp-content');
+let body = document.body,
+		closeButton = document.querySelector('.vvp-menu__close'),
+		openButton = document.querySelector('.vvp-menu__open'),
+		offMenuField = document.querySelector('.vvp-menu-blur');
 
-clsBtn[0].onclick = function() {
-	menu[0].classList.add('vvp-menu--close');
-	navIcon[0].classList.add('vvp-menu-show--active');
-	menu[0].classList.remove('vvp-menu--open');
-	content[0].classList.remove('vvp-content--moved');
-}
-clsBtn[1].onclick = function() {
-	menu[0].classList.add('vvp-menu--close');
-	navIcon[0].classList.add('vvp-menu-show--active');
-	menu[0].classList.remove('vvp-menu--open');
-	content[0].classList.remove('vvp-content--moved');
-}
+closeButton.addEventListener('click',toggleMenu);
+openButton.addEventListener('click',toggleMenu);
+offMenuField.addEventListener('click',toggleMenu);
 
-navIcon[0].onclick = function() {
-	navIcon[0].classList.remove('vvp-menu-show--active');
-	menu[0].classList.add('vvp-menu--open');
-	content[0].classList.add('vvp-content--moved');
+function toggleMenu(){
+	body.classList.toggle('vvp-menu--active');
 }
