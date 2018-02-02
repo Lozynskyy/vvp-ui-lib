@@ -8,7 +8,7 @@
 	line-height: 22px;
 	font-family: Lato, sans-serif;
 	font-size: 18px;
-	transition: width 0.5s linear;
+	transition: margin 0.3s ease;
 
 	&__header{
 		width: 100%;
@@ -54,18 +54,18 @@
 }
 
 .vvp-container{
-	transition: width 0.5s linear;
+	transition: transform 0.3s ease;
 }
 
 .vvp-menu-active{
 	.vvp-menu{
 		margin-left: 0;
-		transition: width 0.5s linear;
+		transition: margin 0.3s ease;
 	}
 
 	.vvp-container{
 		transform: translate(354px);
-		transition: width 0.5s linear;
+		transition: transform 0.3s ease;
 	}
 
 	.vvp-onmenu-background{
