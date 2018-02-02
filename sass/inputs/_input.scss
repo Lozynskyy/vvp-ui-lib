@@ -1,10 +1,13 @@
 .vvp-input {
-    border-radius: 2px;
+    border: 2px;
     width: 100%;
     box-sizing: border-box;
     font-size: 18px;
     background-color: $color-white;
     min-height: 38px;
+    margin-bottom: 16px;
+    color: $color-white;
+    padding-left: 16px;
     &--transparent {
         backdrop-filter: blur(10.8px);
         background-color: rgba(255, 255, 255, 0.5);
