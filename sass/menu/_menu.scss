@@ -55,9 +55,12 @@
 
 .vvp-container{
 	transition: transform 0.3s ease;
+	min-height: 100vh;
 }
 
 .vvp-menu-active{
+	overflow-x: hidden;
+
 	.vvp-menu{
 		margin-left: 0;
 		transition: margin 0.3s ease;
@@ -75,8 +78,6 @@
 
 .vvp-onmenu-background{
 	display: none;
-	width: 100%;
-	min-height: 100vh;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -87,7 +88,5 @@
 }
 
 .vvp-menu-open{
-		top: 22px;
-		left: 26px;
-		cursor: pointer;
-	}
+	cursor: pointer;
+}

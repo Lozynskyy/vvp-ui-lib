@@ -1,0 +1,26 @@
+.vvp-header{
+	height: 80px;
+	background-color: $color-beige20;
+	width: 100%;
+
+	&__icon{
+		margin: 20px;
+		cursor: pointer;
+	}
+
+	&__menu{
+		text-decoration: none;
+		font-family: Lato, sans-serif;
+		color: $color-grey;
+		line-height: 22px;
+		font-size: 18px;
+
+		&-label{
+			display: inline-block;
+			position: relative;
+			bottom: 32px;
+			right: 10px;
+			cursor: pointer;
+		}
+	}
+}
